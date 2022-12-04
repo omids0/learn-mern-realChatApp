@@ -13,14 +13,20 @@ async function getSum() {
 // getSum();
 
 const http = require("http");
+const url = require("url");
+
 const server = http.createServer(async (req, res) => {
   console.log("Server is now running");
   //   res.writeHead(200, { "Content-Type": "text/html" });
   //   res.end("Hi Omid");
-  const data = await fs.readFile("./server.html", "utf-8");
-  res.writeHead(200, { "Content-Type": "text/html" });
-
-  res.end(data);
+  //
+  //   const data = await fs.readFile("./server.html", "utf-8");
+  //   res.writeHead(200, { "Content-Type": "text/html" });
+  //   res.end(data);
+  //
+  // const myURL = new URL(req.url, "http://localhost:3000/");
+  // console.log(myURL);
+  // res.end("url");
 });
 
 server.listen(3000);
