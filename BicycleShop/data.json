@@ -1,0 +1,48 @@
+[
+  {
+    "id": "0",
+    "name": "Hero Spunky 26TSS",
+    "hasDiscount": true,
+    "discount": 25,
+    "originalPrice": 4000,
+    "star": 4
+  },
+  {
+    "id": "1",
+    "name": "Spunky 26TSS",
+    "hasDiscount": true,
+    "discount": 31,
+    "originalPrice": 5100,
+    "star": 2
+  },
+  {
+    "id": "2",
+    "name": "Tiro Spunky 26TSS",
+    "hasDiscount": true,
+    "discount": 23,
+    "originalPrice": 6200,
+    "star": 5
+  },
+  {
+    "id": "3",
+    "name": "Siro Spunky 26TSS",
+    "hasDiscount": true,
+    "discount": 21,
+    "originalPrice": 4000,
+    "star": 3
+  },
+  {
+    "id": "4",
+    "name": "Lirooo Spunky 26TSS",
+    "hasDiscount": false,
+    "originalPrice": 7000,
+    "star": 1
+  },
+  {
+    "id": "5",
+    "name": "Wirooo Spunky 26TSS",
+    "hasDiscount": false,
+    "originalPrice": 7000,
+    "star": 2
+  }
+]
