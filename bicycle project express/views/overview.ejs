@@ -7,6 +7,14 @@
     <title>overview</title>
 </head>
 <body>
-    <h1><%NAME%></h1>
+    <h1><%=bicycle.name%></h1>
+    <img src="/images/<%=bicycle.image%>" alt="<%=bicycle.name%>"/>
+    <p>
+        <% if(bicycle.discount){ %>
+            $<%= bicycle.orginalPrice * (100 - bicycle.discount) / 100 %>
+        <% } else { %>
+            $<%= bicycle.originalPrice %>
+        <% } %>
+    </p>
 </body>
 </html>
