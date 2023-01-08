@@ -162,3 +162,9 @@ Express is a minimal and flexible Node.js web applications framwork
 lets see express folder for more example and test
 
 Joi ===> validating schema
+
+// ++++++++++++++++++++++++++++++ MONGO DB ++++++++++++++++++++++++++++++++++++++
+downloading .msi
+then install it
+step 3 is set windows location to system envirement
+ste 4 in cmd check mongod --version
