@@ -160,3 +160,5 @@ const server = http.createServer(async(req,res) => {
 // +++++++++++++++++++++++++++++++ EXPRESS +++++++++++++++++++++++++++++++++++++
 Express is a minimal and flexible Node.js web applications framwork
 lets see express folder for more example and test
+
+Joi ===> validating schema
