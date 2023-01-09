@@ -84,3 +84,27 @@ async function fetchByComprationOprators() {
   //   .or: shows one one of conditions
   //   .and check both in it will return
 }
+
+async function updateDocumentById() {
+  const user = await User.findById("qwe1321321q3we321qw"); //string
+  user.isMarried = true;
+  await user.save();
+}
+
+async function findByIdAndUpdate() {
+  const user = await User.findByIdAndUpdate(
+    "qwe1321321q3we321qw",
+    { age: 45, isMarried: false },
+    { new: true, runValidators: true }
+  ); //string
+}
+
+async function deleteDocument() {
+  // we can do in 3 ways:
+  // 1
+  await User.deleteOne({ _id: "asd1212asd21" });
+  // 2
+  await User.deleteMany({ isMarried: true }); // remove all marrieds
+  // 3
+  await User.findByIdAndDelete("asdasd132131asd");
+}
