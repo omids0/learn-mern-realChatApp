@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Server Is running...!</h1>
+    <!-- <h1 id="myTime"></h1> -->
+    <h1 id="myMsg"></h1>
+    <!-- <input placeholder="Name" id="name" type="text" />
+    <button id="send" onclick="send()">Send</button> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        // let socket = io()
+        //server to client ❌
+        // socket.on('myEvent', function(msg) {
+        //     document.getElementById('myTime').innerHTML = ''
+        //     document.getElementById('myTime').innerHTML = msg
+        // })
+
+        //client to server ❌
+        // function send() {
+        //     const name = document.getElementById('name').value
+        //     socket.send(name)
+        // }
+
+        //broadcasting ❌
+        // socket.on('myBroadcast', (data) => {
+        //     document.getElementById('myMsg').innerHTML = data
+        // })
+
+        //namespace ❌
+        let socket = io('/buy')
+        socket.on('myEvent', (data) => {
+            document.getElementById('myMsg').innerHTML = data
+        })
+
+    </script>
+</body>
+</html>

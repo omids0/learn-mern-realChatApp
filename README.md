@@ -168,3 +168,20 @@ downloading .msi
 then install it
 step 3 is set windows location to system envirement
 ste 4 in cmd check mongod --version
+
+// ++++++++++++++++++++++++++++++ SOKET.IO ++++++++++++++++++++++++++++++++++++++
+what is soket? 
+    works for create real time cominucation
+
+soket.io library has two part:
+  1.NodeJs library for managing server side
+  2.Client Side library for managing browser
+
+events handling (Server Side):
+  -connect    connect_error   connect_timeout    reconnect
+  -Message
+  -disconect
+  -reconnect
+  -ping
+  -join
+  -leave
