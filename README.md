@@ -185,3 +185,15 @@ events handling (Server Side):
   -ping
   -join
   -leave
+
+// folder 35 - complete backend
+1.adding folders: controller, models, routes, middleware
+2.in config folder creating database + import database to server.js + dotenv.config
+3.routes: تعریف روترها
+4.controller: از کنترلر به روترها ایمپورت میکنیم
+5.روتر رو به سرور ایمپورت و معرفی میکنیم
+6.server.js: app.use('/api/messenger', authRouter)
+7.models: model + Schema ===> 
+    اول اسکیما تعریف میکنیم
+    بعدش مدل همراه با اسمش رو تعریف میکنیم
+    formable
