@@ -113,7 +113,9 @@ function Register() {
                 <div className="form-group">
                   <div className="file-image">
                     <div className="image">
-                      {loadImage && <img src={loadImage} alt="image" />}
+                      {loadImage && (
+                        <img src={loadImage} alt="profile_Picture" />
+                      )}
                     </div>
                     <div className="file">
                       <label htmlFor="image">Select Image</label>
