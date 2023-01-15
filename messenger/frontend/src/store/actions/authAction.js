@@ -18,7 +18,7 @@ export const userRegister = (data) => {
       dispatch({
         type: REGISTER_SUCCESS,
         payload: {
-          successMessege: response.data.successMessege,
+          successMessage: response.data.successMessage,
           token: response.data.token,
         },
       });
