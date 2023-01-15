@@ -1,20 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 // import { userLogin } from "../store/actions/authAction";
-// import { useAlert } from "react-alert";
+import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
+import { userLogin } from "../store/actions/authAction";
+import { ERROR_CLEAR, SUCCESS_MESSAGE_CLEAR } from "../store/types/authType";
 // import { ERROR_CLEAR, SUCCESS_MESSAGE_CLEAR } from "../store/types/authType";
 
 const Login = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // const alert = useAlert();
+  const alert = useAlert();
 
-  // const { loading, authenticate, error, successMessage, myInfo } = useSelector(
-  //   (state) => state.auth
-  // );
+  const { loading, authenticate, error, successMessage, myInfo } = useSelector(
+    (state) => state.auth
+  );
 
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const [state, setState] = useState({
     email: "",
@@ -30,22 +32,22 @@ const Login = () => {
 
   const login = (e) => {
     e.preventDefault();
-    // dispatch(userLogin(state));
+    dispatch(userLogin(state));
   };
 
-  // useEffect(() => {
-  //   if (authenticate) {
-  //     navigate("/");
-  //   }
-  //   if (successMessage) {
-  //     alert.success(successMessage);
-  //     dispatch({ type: SUCCESS_MESSAGE_CLEAR });
-  //   }
-  //   if (error) {
-  //     error.map((err) => alert.error(err));
-  //     dispatch({ type: ERROR_CLEAR });
-  //   }
-  // }, [successMessage, error]);
+  useEffect(() => {
+    if (authenticate) {
+      navigate("/");
+    }
+    if (successMessage) {
+      alert.success(successMessage);
+      dispatch({ type: SUCCESS_MESSAGE_CLEAR });
+    }
+    if (error) {
+      error.map((err) => alert.error(err));
+      dispatch({ type: ERROR_CLEAR });
+    }
+  }, [successMessage, error]);
 
   return (
     <div className="register">

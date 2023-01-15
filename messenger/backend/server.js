@@ -1,5 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
 
 const app = express();
 
@@ -9,6 +11,9 @@ const authRouter = require("./routs/authRoute");
 dotenv.config({
   path: "backend/config/config.env",
 });
+
+app.use(bodyParser.json());
+app.use(cookieParser());
 app.use("/api/messenger", authRouter);
 
 const PORT = process.env.PORT || 5000;
