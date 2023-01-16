@@ -7,6 +7,7 @@ const app = express();
 
 const dataBaseConnected = require("./config/database");
 const authRouter = require("./routs/authRoute");
+const messengerRoute = require("./routs/messengerRoute");
 
 dotenv.config({
   path: "backend/config/config.env",
@@ -15,6 +16,7 @@ dotenv.config({
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use("/api/messenger", authRouter);
+app.use("/api/messenger", messengerRoute);
 
 const PORT = process.env.PORT || 5000;
 

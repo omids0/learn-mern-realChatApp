@@ -32,10 +32,7 @@ const Message = () => {
 
       <div className="fd-message">
         <div className="image-message-time">
-          <img
-            src="/image/46668businessman-icon-vector-male-avatar-profile-image-profile-businessman-icon-vector-male-avatar-profile-image-182095609.jpg"
-            alt=""
-          />
+          <img src="/image/20003ariyan.jpg" alt="" />
           <div className="message-time">
             <div className="fd-text">
               <p className="message-text">I am Fine </p>
@@ -47,10 +44,7 @@ const Message = () => {
 
       <div className="fd-message">
         <div className="image-message-time">
-          <img
-            src="/image/46668businessman-icon-vector-male-avatar-profile-image-profile-businessman-icon-vector-male-avatar-profile-image-182095609.jpg"
-            alt=""
-          />
+          <img src="/image/20003ariyan.jpg" alt="" />
           <div className="message-time">
             <div className="fd-text">
               <p className="message-text">I am Fine </p>
@@ -80,10 +74,7 @@ const Message = () => {
 
       <div className="fd-message">
         <div className="image-message-time">
-          <img
-            src="/image/46668businessman-icon-vector-male-avatar-profile-image-profile-businessman-icon-vector-male-avatar-profile-image-182095609.jpg"
-            alt=""
-          />
+          <img src="/image/20003ariyan.jpg" alt="" />
           <div className="message-time">
             <div className="fd-text">
               <p className="message-text">I am Fine </p>
@@ -104,10 +95,7 @@ const Message = () => {
 
       <div className="fd-message">
         <div className="image-message-time">
-          <img
-            src="/image/46668businessman-icon-vector-male-avatar-profile-image-profile-businessman-icon-vector-male-avatar-profile-image-182095609.jpg"
-            alt=""
-          />
+          <img src="/image/20003ariyan.jpg" alt="" />
           <div className="message-time">
             <div className="fd-text">
               <p className="message-text">I am Fine </p>
@@ -139,10 +127,7 @@ const Message = () => {
 
       <div className="fd-message">
         <div className="image-message-time">
-          <img
-            src="/image/46668businessman-icon-vector-male-avatar-profile-image-profile-businessman-icon-vector-male-avatar-profile-image-182095609.jpg"
-            alt=""
-          />
+          <img src="/image/20003ariyan.jpg" alt="" />
           <div className="message-time">
             <div className="fd-text">
               <p className="message-text">I am Fine </p>
